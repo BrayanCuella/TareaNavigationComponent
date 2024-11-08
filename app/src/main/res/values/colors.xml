@@ -7,4 +7,20 @@
     <color name="blue">#2196F3</color>
     <color name="green">#00FF0C</color>
 
+    <color name="orange">#F4511E</color>
+    <color name="gray">#ECECEC</color>
+    <color name="grayDark">#65656565</color>
+
+    <color name="grayDarkDisabled">#8F8F8F</color>
+    <color name="colorText">#282828</color>
+    <color name="statusColor">#EDEDED</color>
+
+    <color name="strokeColor">#1E88E5</color>
+    <color name="opaqueBG">#61000000</color>
+
+    <color name="playerColor">#FF4349</color>
+
+
+
+
 </resources>
