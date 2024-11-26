@@ -1,17 +1,16 @@
-package com.cuellar.navigationcomponentexample
+package com.cuellar.navigationcomponentexample.audio
 
-import android.provider.SimPhonebookContract.SimRecords
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
+import com.cuellar.navigationcomponentexample.R
 import java.text.SimpleDateFormat
 import java.util.Date
 
-class Adapter(var records: ArrayList<AudioRecord>,var listener: OnItemClickListener):RecyclerView.Adapter<Adapter.ViewHolder>() {
+class Adapter(var records: ArrayList<AudioRecord>, var listener: OnItemClickListener):RecyclerView.Adapter<Adapter.ViewHolder>() {
     inner class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView),View.OnClickListener,View.OnLongClickListener{
         var tvFilename:TextView=itemView.findViewById(R.id.tvFilename)
         var tvMeta:TextView=itemView.findViewById(R.id.tvMeta)

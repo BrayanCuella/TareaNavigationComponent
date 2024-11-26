@@ -1,4 +1,4 @@
-package com.cuellar.navigationcomponentexample
+package com.cuellar.navigationcomponentexample.audio
 
 import android.media.MediaPlayer
 import android.os.Bundle

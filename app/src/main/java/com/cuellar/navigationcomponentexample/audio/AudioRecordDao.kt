@@ -1,4 +1,4 @@
-package com.cuellar.navigationcomponentexample
+package com.cuellar.navigationcomponentexample.audio
 
 import androidx.room.Dao
 import androidx.room.Delete

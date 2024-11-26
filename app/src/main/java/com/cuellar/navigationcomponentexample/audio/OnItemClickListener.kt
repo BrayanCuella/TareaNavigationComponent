@@ -1,4 +1,4 @@
-package com.cuellar.navigationcomponentexample
+package com.cuellar.navigationcomponentexample.audio
 
 interface OnItemClickListener {
     fun onItemClickListener(position:Int)

@@ -1,6 +1,5 @@
-package com.cuellar.navigationcomponentexample
+package com.cuellar.navigationcomponentexample.audio
 
-import android.media.AudioTimestamp
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey

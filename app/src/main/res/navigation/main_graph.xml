@@ -16,15 +16,21 @@
             app:destination="@id/secondFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@animator/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_enter_anim"
+            />
+        <action
+            android:id="@+id/action_firstFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.cuellar.navigationcomponentexample.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
-        <action
-            android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
         <argument
             android:name="name"
             app:argType="string"
@@ -35,4 +41,9 @@
         android:name="com.cuellar.navigationcomponentexample.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.cuellar.navigationcomponentexample.fourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" />
 </navigation>

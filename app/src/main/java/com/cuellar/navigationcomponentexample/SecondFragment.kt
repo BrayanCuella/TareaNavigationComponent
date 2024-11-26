@@ -14,13 +14,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.navArgs
 import androidx.room.Room
+import com.cuellar.navigationcomponentexample.audio.AppDatabase
+import com.cuellar.navigationcomponentexample.audio.AudioPlayerActivity
+import com.cuellar.navigationcomponentexample.audio.AudioRecord
+import com.cuellar.navigationcomponentexample.audio.GalleryActivity
+import com.cuellar.navigationcomponentexample.audio.Timer
 import com.cuellar.navigationcomponentexample.databinding.FragmentSecondBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.coroutines.GlobalScope
@@ -35,7 +39,7 @@ import java.util.Date
 
 const val REQUEST_CODE = 200
 
-class SecondFragment : Fragment(),Timer.OnTimerTickListener{
+class SecondFragment : Fragment(), Timer.OnTimerTickListener{
 
     private lateinit var amplitudes: ArrayList<Float>
     private var permissions = arrayOf(Manifest.permission.RECORD_AUDIO)
@@ -51,7 +55,7 @@ class SecondFragment : Fragment(),Timer.OnTimerTickListener{
 
     private  lateinit var vibrator: Vibrator
 
-    private lateinit var timer:Timer
+    private lateinit var timer: Timer
 
     private lateinit var db : AppDatabase
 
@@ -100,7 +104,7 @@ class SecondFragment : Fragment(),Timer.OnTimerTickListener{
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
 
 
-        timer =Timer(this)
+        timer = Timer(this)
         vibrator = requireContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
     }
 
